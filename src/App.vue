@@ -12,6 +12,7 @@ import HelloWorld from './components/HelloWorld.vue';
 import AppCustomers from './components/AppCustomers.vue';
 import AppProducts from './components/AppProducts.vue';
 import NavBar from './components/NavBar.vue';
+import AddCustomer from './components/AddCustomer.vue';
 
 export default {
   name: 'app',
@@ -19,7 +20,8 @@ export default {
     HelloWorld,
     AppCustomers,
     AppProducts,
-    NavBar
+    NavBar,
+    AddCustomer
   
   }
 }
