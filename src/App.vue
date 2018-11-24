@@ -13,6 +13,7 @@ import AppCustomers from './components/AppCustomers.vue';
 import AppProducts from './components/AppProducts.vue';
 import NavBar from './components/NavBar.vue';
 import AddCustomer from './components/AddCustomer.vue';
+import CustomerProfile from './components/CustomerProfile.vue';
 
 export default {
   name: 'app',
@@ -21,7 +22,8 @@ export default {
     AppCustomers,
     AppProducts,
     NavBar,
-    AddCustomer
+    AddCustomer,
+    CustomerProfile
   
   }
 }
