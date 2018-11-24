@@ -16,6 +16,13 @@ class ProductService {
     find(id) {
         return products.find(product => product.id == id);
     }
+    increment(product) {
+        product.quantity++
+    }
+    
+    decrement(product) {
+        product.quantity > 0 && product.quantity--
+    }
   
 }
 const productService = new ProductService();
