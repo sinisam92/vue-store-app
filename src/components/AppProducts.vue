@@ -3,15 +3,19 @@
         <input type="text" placeholder="Search" v-model="search">
         <table border="1" class="table">
             <thead>
-                <td>Id - number</td>
-                <td>Title</td>
-                <td>Quantity</td>
+                <th>Id - number</th>
+                <th>Title</th>
+                <th>Quantity</th>
+                
             </thead>
             <tbody>
                 <tr v-for="(product, key) in products" :key="key" v-if="product.title.toLowerCase().includes(search.toLowerCase())">
                     <td>{{ product.id }}</td>
                     <td>{{ product.title }}</td>
                     <td>{{ product.quantity }}</td>
+
+                    <button class="btn btn-success" @click="addProduct(product)" type="submit">+</button>
+                    <button class="btn btn-danger" @click="sellProduct(product)" type="submit">-</button>
                 </tr>
             </tbody>
         </table>
@@ -27,6 +31,14 @@ export default {
         return {
             products: ProductService.list(),
             search: ''
+        }
+    },
+    methods: {
+        addProduct(product) {
+            ProductService.increment(product)
+        },
+        sellProduct(product) {
+            ProductService.decrement(product)
         }
     }
 }
