@@ -1,10 +1,9 @@
 <template>
   <div id="app">
     <NavBar/>
-    <!-- <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-  <router-view></router-view>
-  <!-- <img src="./assets/white.jpg" id="bg" alt=""> -->
+    <!-- <img src="background.jpg"> -->
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  <router-view ></router-view>
   
   </div>
 </template>
@@ -28,6 +27,7 @@ export default {
     CustomerProfile
   
   }
+ 
 }
 </script>
 
@@ -39,15 +39,11 @@ export default {
   text-align: center;
   color: #2c3e50;
  
-  
+}
+body {
+  background-color: grey;
 }
 </style>
-<style scoped>
-html {
-  background: url("./assets/white.jpg") no-repeat center center fixed;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
-}
-</style>
+
+
 

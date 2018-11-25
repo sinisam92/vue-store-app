@@ -48,6 +48,7 @@ export default {
  <style scoped>
 .customer {
     font-size: 40px;
+    text-shadow: 3px -1px #000;
 }
 table {
     border: 5px;

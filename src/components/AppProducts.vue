@@ -49,7 +49,7 @@ export default {
 <style scoped>
 
 input {
-    border-radius: 5px;
+    border-radius: 10px;
     width: 20rem;
 }
 table {
