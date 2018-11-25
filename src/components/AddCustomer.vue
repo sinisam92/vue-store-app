@@ -35,6 +35,7 @@ input {
 }
 .btn {
     padding: 7px;
+    margin-left: 20px;
 }
 </style>
 

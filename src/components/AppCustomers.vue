@@ -1,5 +1,8 @@
 <template>
     <div class="container">
+        <transition name="h-anim" enter-active-class="animated bounceInDown" leave-active-class="animated bounceOutDown">
+            <h1 class="customer">Customers</h1>
+        </transition>
         <table border="1" class="table">
             <thead>
                 <th>Name</th>
@@ -42,4 +45,17 @@ export default {
     
 }
 </script>
+ <style scoped>
+.customer {
+    font-size: 40px;
+}
+table {
+    border: 5px;
+    border-radius: 5px; 
+}
+.btn {
+    float: left;
+    padding: 10px;
+}
+</style>
 

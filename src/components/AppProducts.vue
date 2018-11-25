@@ -16,6 +16,9 @@
 
                     <button class="btn btn-success" @click="addProduct(product)" type="submit">+</button>
                     <button class="btn btn-danger" @click="sellProduct(product)" type="submit">-</button>
+                    <router-link :to="{ name: 'product-details', params: { id: product.id}}">
+                        <button class="btn btn-info">Buy</button>
+                    </router-link>
                 </tr>
             </tbody>
         </table>
@@ -44,9 +47,19 @@ export default {
 }
 </script>
 <style scoped>
+
 input {
     border-radius: 5px;
     width: 20rem;
+}
+table {
+    border: 5px;
+    border-radius: 5px; 
+}
+button {
+ float: left;
+ padding: 10px 15px 10px 15px;
+ margin-left: 5px;
 }
 </style>
 

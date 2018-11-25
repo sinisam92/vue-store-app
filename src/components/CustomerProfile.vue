@@ -4,10 +4,18 @@
     <hr/>
      <div>
       <div class="body">
-        <h5 class="title">{{ customer.name }}</h5>
+        <h4 class="title">{{ customer.name }}</h4>
         <h6 class="card-subtitle">{{ customer.email }}</h6>
       </div>
     </div>
+    <h5>Products Bought</h5>
+    <table class="table">
+      <tbody>
+        <tr v-for="(product, key) in customer.products" :key="key">
+          <td>{{ product.title }}</td>
+        </tr>
+      </tbody>
+    </table>
     
   </div>
 </template>
@@ -31,3 +39,12 @@ export default {
 
 
 </script>
+<style scoped>
+h5 {
+    margin-top: 50px;
+}
+table {
+    border: 5px;
+    border-radius: 5px; 
+}
+</style>
